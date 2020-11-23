@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <title>Открытый каркас</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row d-flex flex-sm-row justify-content-between align-items-center">
+            <div class="logo d-flex flex-row align-items-center">
+                <a data-toggle="modal" data-target="#zakaz-zvonok-index" class="full-block"></a>
+                <img src="img/logo.jpg" alt="Logo">
+                <div class="slogan">
+                    <h1>АТЕЛЬЕ ЛЕСТНИЦ</h1>
+                    <p>НА МЕТАЛЛИЧЕСКОМ КАРКАСЕ</p>
+                </div>
+            </div>
+            <div class="header-adress">
+                <p><span class="iconpointer"></span><a href="https://goo.gl/maps/VCpmEUHJ4BH2">г. Ростов-на-Дону ул. Улица 1</a></p>
+                <p><span class="iconmail"></span><a href="mailto: mail@yandex.ru">mail@yandex.ru</a></p>
+            </div>
+            <div class="header-contct d-flex flex-column justify-content-center align-items-end">
+                <p><a href="tel:+71234567890"><span class="text-orange">+7 (123)</span> <span class="text-black"><b>456 78 90</b></span></a></p>
+                <a href="#" class="btn-my" data-toggle="modal" data-target="#zvonok-opens-page">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="banner open">
+    <div class="bg"></div>
+    <div class="container">
+        <div class="row d-flex flex-md-row justify-content-between flex-sm-column">
+            <div class="banner-text col-xl-8 col-lg-7 col-md-6 col-sm-12">
+                <div class="about">
+                    <h1><span class="text-orange">ИЗГОТОВЛЕНИЕ ЛЕСТНИЦ НА
+                    ЛОМАНОМ КАСАУРЕ ПО
+                    ИНДИВИДУАЛЬНОМУ ПРОЕКТУ</span></h1>
+                    <p>Лестницы В дом, таунхаус, коттедж, квартиру
+                        Каркас лестницы открытого типа <span class="text-orange"> за 60 000 руб. за 3 дня</span></p>
+                </div>
+                <img src="img/banner-open-img.png" alt="">
+            </div>
+            <!--<div class="forma1 form-wr col-xl-4 col-lg-5 col-md-6 col-sm-12">-->
+                <!--<form action="" id="form1-banner-opens-page-form">-->
+                    <!--<h4 class="title-form">Запись на замер</h4>-->
+                    <!--<p class="form-text">Оставьте заявку архитектору для-->
+                        <!--проведения замера</p>-->
+                    <!--<input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>-->
+                    <!--<input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required/>-->
+                    <!--<input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />-->
+                    <!--<input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />-->
+                    <!--<input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />-->
+                    <!--<input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />-->
+                    <!--<div class="form-check">-->
+                        <!--<label class="form-check-label d-flex flex-row justify-content-start">-->
+                            <!--<input class="form-check-input" type="checkbox" checked="checked" value="" required>-->
+                            <!--<span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>-->
+                        <!--</label>-->
+                    <!--</div>-->
+                    <!--<button class="btn-my">Записаться на замер</button>-->
+                <!--</form>-->
+            <!--</div>-->
+            <div class="forma2 form-wr col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                <form action="" id="form2-banner-opens-page-form">
+                    <h4 class="title-form">Запись на замер</h4>
+                    <p class="form-text">Оставьте заявку архитектору для
+                        проведения замера</p>
+                    <input type="email" class="" name="email" placeholder="Введите ваш Email" minlength="3" maxlength="20" required/>
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="0" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="broken-kosour">
+    <div class="container">
+        <div class="title-block d-flex flex-column justify-content-between align-items-center">
+            <span class="title-icon"></span>
+            <h3 class="big">Типы лестниц на ломаном касауре</h3>
+        </div>
+
+        <div class="catalog">
+            <div class="item-catalog item1 d-flex flex-row justify-content-between">
+                <div class="wr-pict d-flex"><img src="img/catalog-img.jpg" alt=""></div>
+                <div class="about col-xl-7 d-flex flex-column">
+                    <h3 class="title-cat">Прямая одномаршевая металлическая лестница
+                        на ломаных косоурах</h3>
+                    <p>Каркас из двух косоуров направляющих, выполненных из профильной трубы сечением
+                        100х50х3,5 мм. Два параллельных косоура соединены между собой сегментами из трубы
+                        40х20х2,5 мм для сохранения симметрии. Каркас оснащен специальными пластинами для
+                        "скрытого" крепления ступеней к каркасу. Для данного типа каркаса предусмотрена
+                        минимальная отделка в виде установки чистовых ступеней и перил (ограждений).
+                    </p>
+                    <p class="cash-catl"><span class="text-orange">Цена Фиксированная:</span> 120 000 рублей, при длине марша 3 метра</p>
+                    <p class="vz d-flex flex-row"><span class="text-orange sem-b d-flex">В стоимость входит:</span>
+                        <span>выезд замерщика – консультанта, проектирование, материал,
+                        производство, отверстия под ступени, окраска конструкции.</span></p>
+                    <div class="ss">
+                        <a href="" class="btn-my" data-toggle="modal" data-target="#odnomarsh-opens-page">Пригласить архитектора инженера на замер</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-catalog item2 d-flex flex-row-reverse justify-content-between">
+                <div class="wr-pict d-flex"><img src="img/catalog-img-2.jpg" alt=""></div>
+                <div class="about col-xl-7 d-flex flex-column">
+                    <h3 class="title-cat">Прямая одномаршевая металлическая лестница
+                        на ломаных косоурах</h3>
+                    <p>Каркас из двух косоуров направляющих, выполненных из профильной трубы сечением
+                        100х50х3,5 мм. Два параллельных косоура соединены между собой сегментами из трубы
+                        40х20х2,5 мм для сохранения симметрии. Каркас оснащен специальными пластинами для
+                        "скрытого" крепления ступеней к каркасу. Для данного типа каркаса предусмотрена
+                        минимальная отделка в виде установки чистовых ступеней и перил (ограждений).
+                    </p>
+                    <p class="cash-catl"><span class="text-orange">Цена Фиксированная:</span> 120 000 рублей, при длине марша 3 метра</p>
+                    <p class="vz d-flex flex-row"><span class="text-orange sem-b d-flex">В стоимость входит:</span>
+                        <span>выезд замерщика – консультанта, проектирование, материал,
+                        производство, отверстия под ступени, окраска конструкции.</span></p>
+                    <div class="ss">
+                        <a href="" class="btn-my" data-toggle="modal" data-target="#g-obraz-promej-opens-page">Пригласить архитектора инженера на замер</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-catalog item3 d-flex flex-row justify-content-between">
+                <div class="wr-pict d-flex"><img src="img/catalog-img-3.jpg" alt=""></div>
+                <div class="about col-xl-7 d-flex flex-column">
+                    <h3 class="title-cat">Прямая одномаршевая металлическая лестница
+                        на ломаных косоурах</h3>
+                    <p>Каркас из двух косоуров направляющих, выполненных из профильной трубы сечением
+                        100х50х3,5 мм. Два параллельных косоура соединены между собой сегментами из трубы
+                        40х20х2,5 мм для сохранения симметрии. Каркас оснащен специальными пластинами для
+                        "скрытого" крепления ступеней к каркасу. Для данного типа каркаса предусмотрена
+                        минимальная отделка в виде установки чистовых ступеней и перил (ограждений).
+                    </p>
+                    <p class="cash-catl"><span class="text-orange">Цена Фиксированная:</span> 120 000 рублей, при длине марша 3 метра</p>
+                    <p class="vz d-flex flex-row"><span class="text-orange sem-b d-flex">В стоимость входит:</span>
+                        <span>выезд замерщика – консультанта, проектирование, материал,
+                        производство, отверстия под ступени, окраска конструкции.</span></p>
+                    <div class="ss">
+                        <a href="" class="btn-my" data-toggle="modal" data-target="#g-obraz-zabej-opens-page">Пригласить архитектора инженера на замер</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-catalog item4 d-flex flex-row-reverse justify-content-between">
+                <div class="wr-pict d-flex"><img src="img/catalog-img-4.jpg" alt=""></div>
+                <div class="about col-xl-7 d-flex flex-column">
+                    <h3 class="title-cat">Прямая одномаршевая металлическая лестница
+                        на ломаных косоурах</h3>
+                    <p>Каркас из двух косоуров направляющих, выполненных из профильной трубы сечением
+                        100х50х3,5 мм. Два параллельных косоура соединены между собой сегментами из трубы
+                        40х20х2,5 мм для сохранения симметрии. Каркас оснащен специальными пластинами для
+                        "скрытого" крепления ступеней к каркасу. Для данного типа каркаса предусмотрена
+                        минимальная отделка в виде установки чистовых ступеней и перил (ограждений).
+                    </p>
+                    <p class="cash-catl"><span class="text-orange">Цена Фиксированная:</span> 120 000 рублей, при длине марша 3 метра</p>
+                    <p class="vz d-flex flex-row"><span class="text-orange sem-b d-flex">В стоимость входит:</span>
+                        <span>выезд замерщика – консультанта, проектирование, материал,
+                        производство, отверстия под ступени, окраска конструкции.</span></p>
+                    <div class="ss">
+                        <a href="" class="btn-my" data-toggle="modal" data-target="#p-obraz-promej-opens-page">Пригласить архитектора инженера на замер</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-catalog item5 d-flex flex-row justify-content-between">
+                <div class="wr-pict d-flex"><img src="img/catalog-img-5.jpg" alt=""></div>
+                <div class="about col-xl-7 d-flex flex-column">
+                    <h3 class="title-cat">Прямая одномаршевая металлическая лестница
+                        на ломаных косоурах</h3>
+                    <p>Каркас из двух косоуров направляющих, выполненных из профильной трубы сечением
+                        100х50х3,5 мм. Два параллельных косоура соединены между собой сегментами из трубы
+                        40х20х2,5 мм для сохранения симметрии. Каркас оснащен специальными пластинами для
+                        "скрытого" крепления ступеней к каркасу. Для данного типа каркаса предусмотрена
+                        минимальная отделка в виде установки чистовых ступеней и перил (ограждений).
+                    </p>
+                    <p class="cash-catl"><span class="text-orange">Цена Фиксированная:</span> 120 000 рублей, при длине марша 3 метра</p>
+                    <p class="vz d-flex flex-row"><span class="text-orange sem-b d-flex">В стоимость входит:</span>
+                        <span>выезд замерщика – консультанта, проектирование, материал,
+                        производство, отверстия под ступени, окраска конструкции.</span></p>
+                    <div class="ss">
+                        <a href="" class="btn-my" data-toggle="modal" data-target="#p-obraz-zabej-opens-page">Пригласить архитектора инженера на замер</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="odnomarsh-opens-page" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body forma1">
+                <form action="" id="odnomarsh-opens-page-form">
+                    <h4 class="title-form">Заказать</h4>
+                    <p class="form-text">Оставьте заявку</p>
+                    <input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required />
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="g-obraz-promej-opens-page" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body forma1">
+                <form action="" id="g-obraz-promej-opens-page-form">
+                    <h4 class="title-form">Заказать</h4>
+                    <p class="form-text">Оставьте заявку</p>
+                    <input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required />
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="g-obraz-zabej-opens-page" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body forma1">
+                <form action="" id="g-obraz-zabej-opens-page-form">
+                    <h4 class="title-form">Заказать</h4>
+                    <p class="form-text">Оставьте заявку</p>
+                    <input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required />
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="p-obraz-promej-opens-page" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body forma1">
+                <form action="" id="p-obraz-promej-opens-page-form">
+                    <h4 class="title-form">Заказать</h4>
+                    <p class="form-text">Оставьте заявку</p>
+                    <input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required />
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="p-obraz-zabej-opens-page" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body forma1">
+                <form action="" id="p-obraz-zabej-opens-page-form">
+                    <h4 class="title-form">Заказать</h4>
+                    <p class="form-text">Оставьте заявку</p>
+                    <input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required />
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="guarantee">
+    <div class="container">
+        <div class="title-block d-flex flex-column justify-content-between align-items-center">
+            <h3 class="big">Гарантируем лучший результат</h3>
+        </div>
+        <div class="wr-guar d-flex flex-wrap justify-content-center">
+            <div class="item-guar item1">
+                <span class="icon-guar"></span>
+                <p class="title-guar">БЕСПЛАТНЫЙ ЗАМЕР</p><p>Архитектор бесплатно сделает
+                замер  и предоставит 3D-модель
+                лестницы за 12 часов</p></div>
+            <div class="item-guar item2">
+                <span class="icon-guar"></span>
+                <p class="title-guar">ОПЫТ</p><p>Нами произведено более
+                300 этажей лестниц. Мы
+                смонтировали лестницы
+                более чем на 400 объектах
+                по всей РО</p></div>
+            <div class="item-guar item3">
+                <span class="icon-guar"></span>
+                <p class="title-guar">БЫСТРЫЕ СРОКИ</p><p>От замера до установки всего
+                3-7 дней. Монтаж на объекте
+                от 2 часов</p></div>
+            <div class="item-guar item4">
+                <span class="icon-guar"></span>
+                <p class="title-guar">ИНДИВИДУАЛЬНОСТЬ</p><p>Мы изготовим лестницу
+                по Вашим размером и
+                с учетом Ваших Желаний</p></div>
+            <div class="item-guar item5">
+                <span class="icon-guar"></span>
+                <p class="title-guar">ТОЧНАЯ ГЕОМЕТРИЯ</p><p>Минимальная погрешность
+                по размерам и точное
+                соблюдение углов - залог
+                долговечности наших
+                лестниц</p></div>
+            <div class="item-guar item6">
+                <span class="icon-guar"></span>
+                <p>3 штатных бригады монтажников
+                Одна бригада ведёт объект от
+                проекта до сдачи заказчику</p></div>
+            <div class="item-guar item7">
+                <span class="icon-guar"></span>
+                <p>Исключен прогиб лестницы
+                толщина металла используем
+                с запасом в 2.3 раза
+            </p></div>
+            <div class="item-guar item8">
+                <span class="icon-guar"></span>
+                <p>Стилизация лестницы
+                под общий стиль помещения</p></div>
+            <div class="item-guar item9">
+                <span class="icon-guar"></span>
+                <p>Отделка каркаса
+                деревом на заключительном
+                этапе ремонта</p></div>
+        </div>
+    </div>
+</section>
+<section class="installation">
+    <div class="container">
+        <div class="row d-flex flex-md-row justify-content-between align-items-center flex-sm-column">
+            <div class="install-text col-xl-8 col-lg-6 col-md-12 col-sm-12">
+                <h1><span class="text-orange">МОНТАЖ КАРКАСА ЛЕСТНИЦЫ
+                    ПРОИЗВОДИТСЯ БЕЗ СВАРКИ
+                    И РЕЗКИ</span></h1>
+                <p>Лестница собирается полностью на болтовых и специальных
+                    соединениях. никаких искр, дыма и грязи!</p>
+                <ul>
+                    <li>
+                        <p>Обои целы!</p>
+                    </li>
+                    <li>
+                        <p>Линолеум не прожгли!</p>
+                    </li>
+                    <li>
+                        <p>Занавески не пропахли!</p>
+                    </li>
+                </ul>
+                <p><b><span class="text-orange">Нужно ли это, чтобы быть спокойным за свой ремонт?</span></b></p>
+                <p>Конечно да!</p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+                <img src="img/install-img.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="carusel">
+    <div class="container">
+        <div class="title-block d-flex flex-column justify-content-between align-items-center">
+            <span class="title-icon"></span>
+            <h3 class="big">Наше производство</h3>
+        </div>
+    </div>
+
+    <div class="owl-carousel">
+        <div><img src="img/foto_0000s_0000_1.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0001_2.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0002_3.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0003_4.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0004_5.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0005_6.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0006_7.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0007_8.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0000_1.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0001_2.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0002_3.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0003_4.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0004_5.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0005_6.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0006_7.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0007_8.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0000_1.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0001_2.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0002_3.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0003_4.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0004_5.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0005_6.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0006_7.jpg" alt=""></div>
+        <div><img src="img/foto_0000s_0007_8.jpg" alt=""></div>
+    </div>
+</section>
+<section class="roll">
+    <div class="container">
+        <div class="title-block d-flex flex-column justify-content-between align-items-center">
+            <span class="title-icon"></span>
+            <h3 class="big">Роль лестницы в доме</h3>
+        </div>
+        <p>Синтетическое тестирование предполагает независимые способы реализации системы массового участия. Разнообразный и богатый опыт говорит нам, что
+            сплоченность команды профессионалов требует от нас анализа системы обучения кадров, соответствующей насущным потребностям. Кстати, диаграммы связей
+            являются только методом политического участия и превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Равным
+            образом, современная методология разработки, в своем классическом представлении, допускает внедрение существующих финансовых и административных
+            условий. Консультация с широким активом играет определяющее значение для вывода текущих активов. Также как семантический разбор внешних
+            противодействий не дает нам иного выбора, кроме определения экономической целесообразности принимаемых решений.</p>
+        <p>Как уже неоднократно упомянуто, интерактивные прототипы объединены в целые кластеры себе подобных. В рамках спецификации современных стандартов,
+            многие известные личности, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут указаны как
+            претенденты на роль ключевых факторов. Непосредственные участники технического прогресса представляют собой не что иное, как квинтэссенцию победы
+            маркетинга над разумом и должны быть призваны к ответу.</p>
+        <p>Высокотехнологичная концепция общественного уклада является качественно новой ступенью приоретизации разума над эмоциями. Также как современная
+            методология разработки однозначно определяет каждого участника как способного принимать собственные решения касаемо экономической
+            целесообразности принимаемых решений. Безусловно, начало повседневной работы по формированию позиции позволяет выполнить важные задания по
+            разработке распределения внутренних резервов и ресурсов. Внезапно, элементы политического процесса будут обнародованы. Повседневная практика
+            показывает, что социально-экономическое развитие говорит о возможностях глубокомысленных рассуждений.</p>
+    </div>
+</section>
+<section class="mes-con">
+    <div class="container">
+        <div class="row d-flex flex-column align-items-center">
+            <h2 class="qs-title">Остались вопросы?</h2>
+            <p class="qs-text"><span class="text-yellou"><a href="tel:+71234567890">Звоните +7 (123) 456 78 90 или напишите</a></span></p>
+            <div class="whtl col-md-5 col-xl-2 col-lg-3 d-flex flex-row justify-content-sm-around">
+                <a class="messenger whatsapp" href="https://api.whatsapp.com/send?phone=<USERNAME>"></a><a class="messenger telegram" href="tg://resolve?domain=<USERNAME>"></a>
+                <!--Вместо <USERNAME> ставим номер телефона для whatsapp и номер либо логин для telegramm-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row d-flex flex-sm-row justify-content-between align-items-start">
+            <div class="social-logo d-flex flex-column">
+                <div class="logo d-flex flex-row align-items-center">
+                    <a href="http://worksteel61.ru/" class="full-block"></a>
+                    <img src="img/logo.jpg" alt="Logo">
+                    <div class="slogan">
+                        <h1>АТЕЛЬЕ ЛЕСТНИЦ</h1>
+                        <p>НА МЕТАЛЛИЧЕСКОМ КАРКАСЕ</p>
+                    </div>
+                </div>
+                <div class="social-links d-flex flex-row justify-content-end">
+                    <a href="" class="social vk"></a>
+                    <a href="" class="social od"></a>
+                    <a href="" class="social fb"></a>
+                    <a href="" class="social in"></a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="footer-navs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a class="active" href="opens.html">Открытый каркас лестницы</a></li>
+                    <li><a href="closed.html">Закрытый каркас</a></li>
+                    <li><a href="central.html">Центральный касаур</a></li>
+                    <li><a href="central.html">Политика конфиденциальности</a></li>
+                    <!--<li><a href="">Винтовые лестницы</a></li>-->
+                </ul>
+            </div>
+            <div class="header-adress">
+                <p><span class="iconpointer"></span><a href="https://goo.gl/maps/VCpmEUHJ4BH2">г. Ростов-на-Дону ул. Улица 1</a></p>
+                <p><span class="iconmail"></span><a href="mailto: mail@yandex.ru">mail@yandex.ru</a></p>
+            </div>
+            <div class="header-contct d-flex flex-column justify-content-center align-items-end">
+                <p><a href="tel:+71234567890"><span class="text-orange">+7 (123)</span> <span class="text-black"><b>456 78 90</b></span></a></p>
+                <a href="#" class="btn-my" data-toggle="modal" data-target="#zvonok-opens-page">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+
+<div class="modal fade" id="zvonok-opens-page" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body forma1">
+                <form action="" id="zvonok-opens-page-form">
+                    <h4 class="title-form">Заказать звонок</h4>
+                    <p class="form-text">Мы с вами свяжемся</p>
+                    <input type="text" class="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input type="tel" class="phone" name="phone" placeholder="Введите Ваш телефон"  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" minlength="11" maxlength="16" required />
+                    <input type="hidden" name="source" id="source" value="<?php echo $_GET['utm_source'];?>" />
+                    <input type="hidden" name="campaign" id="campaign" value="<?php echo $_GET['utm_campaign'];?>" />
+                    <input type="hidden" name="content" id="content" value="<?php echo $_GET['utm_content'];?>" />
+                    <input type="hidden" name="term" id="term" value="<?php echo $_GET['utm_term'];?>" />
+                    <div class="form-check">
+                        <label class="form-check-label d-flex flex-row justify-content-start">
+                            <input class="form-check-input" type="checkbox" checked="checked" value="" required>
+                            <span class="text-center">Я ознакомлен с <a href="">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button class="btn-my">Записаться на замер</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+\<script src="js/main.js"></script>
+</body>
+</html>

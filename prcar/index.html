@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                   <a class="navbar-brand" href="#"><object type="image/svg+xml" data="img/launchLogo.svg">LOGO</object>
+                       </a>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                               <a class="nav-link" id="nav-link-1" href="#lab">Исследование</a>
+                           </li>
+                           <li class="nav-item active">
+                               <a class="nav-link" id="nav-link-2" href="#q-a">FAQ</a>
+                           </li>
+                           <li class="nav-item active">
+                               <a class="nav-link" id="nav-link-3" href="#bottom-f">Поддержка</a>
+                           </li>
+                           <li class="nav-item active">
+                               <a class="nav-link btn-my" id="nav-link-4" href="#bottom-f">Участвовать</a>
+                           </li>
+                       </ul>
+
+                   </div>
+               </nav>
+            <div class="top">
+           <div> <h3>Исследование предпочтений при выборе автомобиля </h3>
+               <p>Поделитесь образом своего идеального автомобиля и выиграйте призы</p></div>
+            <div class="sch">
+                <h3 class="sch-t">Уже участвуют</h3>
+                <div class="tablo">
+                    <div class="items"><span class="number">0</span></div>
+                    <div class="items"><span class="number">1</span></div>
+                    <div class="items"><span class="number">2</span></div>
+                    <div class="items"><span class="number">8</span></div>
+                    <div class="items"><span class="number">3</span></div>
+                    <div class="items"><span class="number spincrement">9</span></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="container desctop-car">
+            <div class="car-img">
+                <img src="img/upload-0a1fc140-cc51-11e7-b3cb-7d5bb955cec9.png" alt="">
+            </div>
+        </div>
+        <div class="car-img mobile">
+            <img src="img/upload-0a1fc140-cc51-11e7-b3cb-7d5bb955cec9.png" alt="">
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+
+            <form action="" class="iii">
+                <h3>Принять участие</h3>
+                <p>Ответьте на три вопроса прямо сейчас и узнайте, какие призы мы подготовили для вашего автомобиля</p>
+                <ol>
+                    <li>
+                        <p class="form-qe">У вас есть автомобиль?</p>
+                        <div class="form-group-flex ">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="">
+                                <label class="form-check-label" for="inlineRadio1"><span></span>Да</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="">
+                                <label class="form-check-label" id="lableRadio2"   for="inlineRadio2"><span></span>Нет</label>
+                                <a href="#car-you"
+                                   class="hide hide-no" id="lableRadio2-link"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><p class="form-qe" id="form-qe">Вы покупали его новым или подержанным?</p>
+                        <div class="form-group-flex ">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="">
+                            <label class="form-check-label" id="lableRadio3" for="inlineRadio3"><span></span>Новым</label>
+                            <a href="#car-you" id="lableRadio3-link"
+                               class="hide hide-new"></a>
+                        </div>
+                        <div class="form-check form-check-inline">
+
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio4" value="">
+                            <label class="form-check-label" id="lableRadio4" for="inlineRadio4"><span></span>Подержанным</label>
+                            <a href="#car-you" id="lableRadio4-link"
+                               class="hide hide-new"></a>
+                        </div>
+                        </div>
+                    </li>
+                    <li id="car-you"><p class="form-qe">Выберите ваш автомобиль из списка</p>
+
+                    </li>
+                </ol>
+            <div class="form-flex">
+                <div class="form-group select-div">
+                    <p id="brend-p">Бренд</p>
+                    <select  class="form-control" id="exampleFormControlSelect1">
+                        <option value="0"></option>
+                        <option value="1">1</option>
+                        <option  value="2">2</option>
+                        <option  value="3">3</option>
+                        <option  value="4">4</option>
+                        <option  value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group select-div">
+                    <p id="model-p">Модель</p>
+                    <select onkeyup="checkParams()" class="form-control" id="exampleFormControlSelect2">
+                        <option value="0"></option>
+                        <option  value="1">1</option>
+                        <option  value="2">2</option>
+                        <option  value="3">3</option>
+                        <option  value="4">4</option>
+                        <option  value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group select-div">
+                    <p id="kompl-p">Комплектация</p>
+                    <select class="form-control" id="exampleFormControlSelect3">
+                        <option  value="0"></option>
+                        <option  value="1">1</option>
+                        <option  value="2">2</option>
+                        <option  value="3">3</option>
+                        <option  value="4">4</option>
+                        <option  value="5">5</option>
+                    </select>
+                </div>
+            </div>
+                <input type="submit" href="#animate" class="btn btn-primary disable-btn btn-js" id="marka-js" value="ОТПРАВИТЬ" disabled>
+                <p class="conf">Отправляя форму, вы соглашаетесь с <a href="">политикой конфиденциальности</a> и <a
+                        href="">правилами сервиса</a></p>
+            </form>
+
+
+        </div>
+
+
+        <div class="d-n">
+            <div class="container">
+
+                    <div class="animate" id="animate">
+                        <div class="first-block">
+                            <div class="priz-an">
+
+                                   <h3>Призы</h3>
+                                   <p class="you-car">Ваш автомобиль:</p>
+                                   <p class="you-car-var">Lexus LX 570</p>
+
+                            </div>
+                            <div class="dostupno">
+                                <h3>Доступно:</h3>
+                                <div class="priz">
+                                    <p>Комплект зимней резины</p> <div class="num-priz"><span>0</span><span>5</span></div>
+                                </div>
+                                <div class="priz">
+                                    <p>1 год бесплатного ТО</p> <div class="num-priz"><span>0</span><span>5</span></div>
+                                </div>
+                                <button class="btn btn-primary pop">УЧАСТВОВАТЬ</button>
+                                <p class="conf">1 год бесплатного ТО – сертификат на выполнение сервисных работ по техническому обслуживанию автомобиля марки Lexus в авторизованном дилерском центре на сумму до 100 000 рублей в период с 1 января по 31 декабря 2018 года. В акции участвуют следующие города: Москва, Санкт-Петербург, Екатеринбург, Нижний Новгород... </p>
+                                <p class="conf">Комплект зимней резины – сертификат на приобретение зимних автопокрышек в магазине OZON на сумму до 30 000 рублей.</p>
+                                <p class="conf">Данные приведены только для информации. При участии в исследовании вас попросят указать подробнее марку и модель машины для определения возможных призов.</p>
+                                <p class="conf">Розыгрыш призов происходит по формуле. Выигрывает каждый N-ый участник.</p>
+                                <p class="conf"><a href="">Правила розыгрыша призов</a></p>
+                            </div>
+                        </div>
+
+                            <div class="next-block" id="next-block">
+                            <h3>Примите участие
+                                прямо сейчас</h3>
+                            <p>Для участия <b>скачайте персональное приложение участника исследования</b>
+                                В приложении вас ждет анкета участника и 30-минутный опрос ваших предпочтений
+                                Вспомните, как вы покупали ваш автомобиль и ответьте на вопросы исследования</p>
+                            <a href="" class="gg-p">
+                                <img src="img/34874a9e7eac8fbc694118dc0c393d39.png" alt="">
+                            </a>
+                            <a href="" class="gg-p">
+                                <img src="img/a3262a61318545e040a1818b84bc6e31.png" alt="">
+                            </a>
+                            <button class="btn-pop pop2">продолжить на сайте</button>
+                            <p>Или давайте мы вам напомним по email</p>
+                            <form action="" class="n-form">
+                                <div class="form-group group input ">
+                                    <input type="text" id="emForm" required>
+                                    <span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+                                <button class="btn btn-primary disable-btn" id="btnPriz" disabled>Отправить</button>
+                            </form>
+                        </div>
+
+                        <div class="phone">
+                            <img src="img/phone.jpg" alt="">
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="lab" id="lab">
+            <div class="overlay"></div>
+                <div class="container">
+
+                <h3>Лаборатория исследования</h3>
+                <p>Приглашаем вас принять участие в исследовании предпочтений при выборе автомобиля</p>
+                <p class="p-lab">Автопроизводители задаются вопросом, для кого они работают, что хотят их клиенты, и как вы выбираете автомобили</p>
+                <p class="lab-i">Здесь должен быть текст описания некоторых подробностей исследования и логотипы брендов</p>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+    <div class="q-a-mobile">
+
+        <div class="q-a" id="q-a">
+                <h3>Вопросы и ответы</h3>
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading1">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Кто может участвовать в исследовании?
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading2">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                                    Почему люди участвуют в исследовании?
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading3">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Что я должен делать как участник исследования?
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading4">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    Что делают организаторы исследования с собранной информацией?
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading5">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Защищен ли портал исследования?
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading6">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Сколько стоит участие?
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading7">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    Как я могу изменить свою регистрационную информацию?
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading8">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    Как я могу прекратить участие в проекте?
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse8" class="collapse " role="tabpanel" aria-labelledby="heading8" data-parent="#accordion">
+                            <div class="card-body">
+                                Все участники исследования должны быть старше 18 лет, иметь водительское удостоверение и автомобиль в личном владении или пользовании. Для нас очень важно строгое соблюдение всех этих критериев, поэтому мы оставляем за собой право запрашивать у Вас дополнительную информацию, подтверждающую достоверность данных, указанных при регистрации.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="bootom-form" id="bottom-f">
+
+                <h3>Остались вопросы?
+                    Напишите нам</h3>
+                <form action="" class="b-f">
+                    <div class="form-group group">
+                        <input type="text" id="texFooter" required>
+                        <span class="bar"></span>
+                        <label>Ваш вопрос</label>
+                    </div>
+                    <div class="form-group group">
+                        <input type="text" id="emailFooter" required>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                    <input type="submit" class="btn btn-primary disable-btn btn-js" id="mfooter-em" value="ОТПРАВИТЬ" disabled>
+
+                </form>
+                <p class="conf">Отправляя форму, вы соглашаетесь с <a href="">политикой конфиденциальности</a> и <a
+                        href="">правилами сервиса</a></p>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

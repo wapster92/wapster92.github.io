@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo logo">
+                    <img src="img/logo__img.png" alt="" class="logo__img">
+                    <img src="img/logo__text.png" class="logo__text">
+                    <img src="img/zamok.jpg" alt="" class="logo__zamok hidden">
+                    <a href="" class="logo__link"></a>
+                </div>
+                <a href="" class="header__email">info@ddosoff.ru</a>
+                <a href="" class="header__phone">+7 |499| <span class="header__phone_bold">123 45 67</span></a>
+                <a href="" class="header__reg-button">Регистрация</a>
+                <a href="" class="header__enter-link">Вход</a>
+                <div class="header__button-burger button-burger">
+                    <span class="button-burger__line"></span>
+                    <span class="button-burger__line"></span>
+                    <span class="button-burger__line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__wrapper">
+                <ul class="nav__link-list">
+                    <li class="nav__item-list nav__item-list_metka"><a href="" class="nav__link nav__link_active">Главная</a></li>
+                    <li class="nav__item-list nav__item-list_metka"><a href="https://www.google.ru/" class="nav__link" data-hover="hover-on-link">О компании</a>
+                        <ul class="dropdown">
+                            <li class="dropdown__items"><a href="" class="dropdown__links">Пункт меню</a></li>
+                            <li class="dropdown__items"><a href="" class="dropdown__links">Пункт меню</a></li>
+                            <li class="dropdown__items"><a href="" class="dropdown__links">Пункт меню</a></li>
+                            <li class="dropdown__items"><a href="" class="dropdown__links">Пункт меню</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item-list nav__item-list_metka"><a href="" class="nav__link">Услуги и цены</a></li>
+                    <li class="nav__item-list nav__item-list_metka"><a href="" class="nav__link">FAQ</a></li>
+                    <li class="nav__item-list"><a href="" class="nav__link">Контакты</a></li>
+                    <li class="nav__item-list">
+                        <form action="" class="switcher" id="switcher-js">
+                            <input type="checkbox" id="sw" class="switcher__input">
+                            <span class="switcher__label"></span>
+                            <span class="switcher__rus">Рус</span>
+                            <span class="switcher__eng">Eng</span>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="container banner__wrapper">
+            <h1 class="banner__title">НАДЕЖНАЯ ЗАЩИТА ОТ <br>
+                <span class="banner__title_link">DDoS АТАК</span> ЛЮБОЙ СЛOЖНОСТИ</h1>
+            <a href="#" class="banner__button">Подробнее о защите</a>
+            <form action="" class="banner__form">
+                <input type="text" class="banner__input" placeholder="Введите свой E-mail" required>
+                <button class="banner__button-form">Заказать</button>
+            </form>
+        </div>
+    </div>
+    <div class="edge">
+        <div class="edge__wrapper container">
+            <div class="edge__card card">
+                <h3 class="card__title">DDoS ЗАЩИТА</h3>
+                <ul class="card__list">
+                    <li class="card__list-item"><span class="card__text">Фильтрация всех
+разновидностей DDoS аттак L3, L4, L7 OSI</span></li>
+                    <li class="card__list-item"><span class="card__text">Гибкая настройка фильтров</span></li>
+                    <li class="card__list-item"><span class="card__text">Подключение за 10 минут!</span></li>
+                    <li class="card__list-item"><span class="card__text">Защита с переносом сайта и без</span></li>
+                    <li class="card__list-item"><span class="card__text">Техподдержка 24/7</span></li>
+                </ul>
+                <a href="" class="card__button">Подробнее</a>
+            </div>
+            <div class="edge__card card">
+                <h3 class="card__title">VDS СЕРВЕРА</h3>
+                <p class="card__label">Гарантия доступности SLA</p>
+                <ul class="card__list">
+                    <li class="card__list-item"><span class="card__text">Полное управление конфигурацией</span></li>
+                    <li class="card__list-item"><span class="card__text">Готовые образы подготовленные для DDoS защиты</span></li>
+                    <li class="card__list-item"><span class="card__text">Модули для защиты от взлома сайтов</span></li>
+                </ul>
+                <a href="" class="card__button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="calck-section">
+        <div class="container">
+            <h3 class="calck-section__title">КАЛЬКУЛЯТОР</h3>
+            <div class="calck-section__wrapper">
+                <div class="calck">
+                    <form action="" class="calck__form">
+                        <div class="calck__header">
+                            <h3 class="calck__title help_1">Защита от DDoS атак <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></h3>
+                            <div class="calck__group">
+                                <div class="calck__input-group">
+                                    <label class="calck__label">
+                                        <input type="radio" class="calck__input-radio" name="dos-sec" value="0" checked>
+                                        <span class="calck__radio-style"></span>
+                                        <span class="calck__input-text">Без защиты<span class="helper helper_margin">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></span>
+                                        <span class="cash">2900 Руб</span>
+                                    </label>
+                                    <label class="calck__label">
+                                        <input type="radio" class="calck__input-radio" name="dos-sec" value="10">
+                                        <span class="calck__radio-style"></span>
+                                        <span class="calck__input-text">Подготовка к защите
+                                         <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></span>
+                                       <span class="cash">2900 Руб</span>
+                                    </label>
+                                </div>
+                                <div class="calck__input-group">
+                                    <label class="calck__label">
+                                        <input type="radio" class="calck__input-radio" name="dos-sec" value="20">
+                                        <span class="calck__radio-style"></span>
+                                        <span class="calck__input-text">Защита от DDoS (до 10 mmps)</span>
+                                        <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span><span class="cash">2900 Руб</span>
+                                    </label>
+                                    <label class="calck__label">
+                                        <input type="radio" class="calck__input-radio" name="dos-sec" value="30">
+                                        <span class="calck__radio-style"></span>
+                                        <span class="calck__input-text">Защита от DDoS проектированием</span>
+                                        <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span><span class="cash">2900 Руб</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calck__body">
+                            <h3 class="calck__title help_2">VDS сервер с виртуализацией KVM <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></h3>
+                            <div class="calck__group">
+                                <div class="calck__input-group">
+                                    <p class="calck__name">Оперативная память <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></p>
+                                    <div class="calck__ram switcher-ram">
+                                        <input type="radio" id="mb512" name="switcher-ram" class="switcher-ram__input" value="50" checked>
+                                        <label class="switcher-ram__label" for="mb512">
+                                            <span class="switcher-ram__text">512 Мб  </span>
+                                        </label>
+                                        <input type="radio" id="gb1" name="switcher-ram" class="switcher-ram__input" value="100">
+                                        <label class="switcher-ram__label" for="gb1">
+                                            <span class="switcher-ram__text">1 Гб</span>
+                                        </label>
+                                        <input type="radio" id="gb2" name="switcher-ram" class="switcher-ram__input" value="200">
+                                        <label class="switcher-ram__label" for="gb2">
+                                            <span class="switcher-ram__text">2 Гб</span>
+                                        </label>
+                                        <input type="radio" id="gb3" name="switcher-ram" class="switcher-ram__input" value="300">
+                                        <label class="switcher-ram__label" for="gb3">
+                                            <span class="switcher-ram__text">3 Гб</span>
+                                        </label>
+                                        <input type="radio" id="gb4" name="switcher-ram" class="switcher-ram__input" value="400">
+                                        <label class="switcher-ram__label" for="gb4">
+                                            <span class="switcher-ram__text">4 Гб</span>
+                                        </label>
+                                        <span class="switcher-ram__polzunok"></span>
+                                    </div>
+                                    <p class="calck__name">Процессора Intel XEON 3.0 Ггц<span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></p>
+                                    <div class="calck__processor switcher-pro">
+                                        <input type="radio" id="one-i" name="switcher-pro" class="switcher-pro__input"  value="100" checked>
+                                        <label for="one-i" class="switcher-pro__label">
+                                            <span class="switcher-pro__text">1 Ядро</span>
+                                        </label>
+                                        <input type="radio" id="two-i" name="switcher-pro" class="switcher-pro__input" value="200" >
+                                        <label for="two-i" class="switcher-pro__label">
+                                            <span class="switcher-pro__text">2 Ядра</span>
+                                        </label>
+                                        <input type="radio" id="three-i" name="switcher-pro" class="switcher-pro__input" value="300" >
+                                        <label for="three-i" class="switcher-pro__label">
+                                            <span class="switcher-pro__text">3 Ядра </span>
+                                        </label>
+                                        <input type="radio" id="four-i" name="switcher-pro" class="switcher-pro__input" value="400" >
+                                        <label for="four-i" class="switcher-pro__label">
+                                            <span class="switcher-pro__text">4 Ядра</span>
+                                        </label>
+                                        <span class="switcher-pro__polzunok"></span>
+                                    </div>
+
+                                    <p class="calck__name">Жесткий диск<span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></p>
+                                    <div class="calck__memory memory-switcher">
+                                        <div class="memory-switcher__type">
+                                            <input type="radio" id="hdd" class="memory-switcher__type-input" name="memory-switcher" value="hdd" checked>
+                                            <label for="hdd" class="memory-switcher__type-label">HDD SAS</label>
+                                            <input type="radio" id="ssd" class="memory-switcher__type-input" name="memory-switcher" value="ssd">
+                                            <label for="ssd" class="memory-switcher__type-label">SSD</label>
+                                            <span class="memory-switcher__type-polzunok"></span>
+                                        </div>
+                                        <div class="memory-switcher__value number">
+                                            <span class="memory-switcher__minus minus">-</span>
+                                            <input type="text" name="memory"  class="memory-switcher__input" value="10" readonly>
+                                            <div class="memory-switcher__gb">Гб</div>
+                                            <span class="memory-switcher__plus plus">+</span>
+                                        </div>
+                                        <p class="calck__memory-text">10 Руб за 1Гб</p>
+                                    </div>
+                                </div>
+                                <div class="calck__input-group">
+                                    <p class="calck__name">Операционная система <span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></p>
+                                    <div class="calck__flex-wraper">
+                                        <div class="calck__flex-left">
+                                            <label class="calck__label">
+                                                <input type="radio" class="calck__input-radio" name="os" value="10" checked>
+                                                <span class="calck__radio-style"></span>
+                                                <span class="calck__input-text-body">Debian 8.2 + Vesta</span>
+                                            </label>
+                                            <label class="calck__label">
+                                                <input type="radio" class="calck__input-radio" name="os" value="20">
+                                                <span class="calck__radio-style"></span>
+                                                <span class="calck__input-text-body">Ubuntu LTS + Vesta</span>
+                                            </label>
+                                        </div>
+                                        <div class="calck__flex-right">
+                                            <label class="calck__label">
+                                                <input type="radio" class="calck__input-radio" name="os" value="30">
+                                                <span class="calck__radio-style"></span>
+                                                <span class="calck__input-text-body">CentOS 7.0 + Vesta</span>
+                                            </label>
+                                            <label class="calck__label">
+                                                <input type="radio" class="calck__input-radio" name="os" value="40">
+                                                <span class="calck__radio-style"></span>
+                                                <span class="calck__input-text-body">Windows</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="calck__name">Период<span class="helper">
+                                            <span class="helper__wrapper">
+                                                <span class="helper__content">
+                                                    <span class="helper__text">Debian 8.2 + Vesta
+Ubuntu</span>
+                                                    <span class="helper__label">Cent OS + Vesta Free</span>
+                                                </span>
+                                            </span>
+                                        </span></p>
+                                    <div class="calck__time-switcher time-switcher">
+                                        <input type="radio" id="one-day" name="time-switcher" class="time-switcher__input" value="1d">
+                                        <label for="one-day" class="time-switcher__label">
+                                            <span class="time-switcher__text">1 день</span>
+                                        </label>
+                                        <input type="radio" id="one-week" name="time-switcher" class="time-switcher__input" value="1w">
+                                        <label for="one-week" class="time-switcher__label">
+                                            <span class="time-switcher__text">1 неделя</span>
+                                        </label>
+                                        <input type="radio" id="one-month" name="time-switcher" class="time-switcher__input" value="1m" checked>
+                                        <label for="one-month" class="time-switcher__label">
+                                            <span class="time-switcher__text">1 месяц </span>
+                                        </label>
+
+                                        <input type="radio" id="tree-month" name="time-switcher" class="time-switcher__input" value="3m">
+                                        <label for="tree-month" class="time-switcher__label">
+                                            <span class="time-switcher__text">3 месяца</span>
+                                        </label>
+                                        <input type="radio" id="six-month" name="time-switcher" class="time-switcher__input" value="6m">
+                                        <label for="six-month" class="time-switcher__label">
+                                            <span class="time-switcher__text">6 месяцев </span>
+                                        </label>
+                                        <input type="radio" id="one-year" name="time-switcher" class="time-switcher__input" value="12m">
+                                        <label for="one-year" class="time-switcher__label">
+                                            <span class="time-switcher__text">1 год</span>
+                                        </label>
+                                        <span class="time-switcher__polzunok"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calck__footer">
+                            <h3 class="calck__title-footer">ИТОГО <span class="calck__title-footer_result">2600</span> РУБ</h3>
+                                <p class="calck__text-footer">Защита <span  class="calck__text-footer_shield">600</span> Руб + Сервер <span class="calck__text-footer_server">2000</span> Руб</p>
+                            <input type="email" name="mail" class="calck__input-email" placeholder="Введите свой E-mail" required>
+                            <button class="calck__button">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="is-work">
+        <div class="is-work__wrapper container">
+            <h3 class="is-work__title">КАК РАБОТАЕТ<br> ЗАЩИТА ОТ DDoS</h3>
+            <ul class="is-work__list">
+                <li class="is-work__list-item is-work__list-item_1">
+                    <span class="is-work__icon is-work__icon_1"></span>
+                    <p class="is-work__text">Фильтрация L3 L4 OSI
+                        на магистральном
+                        оборудовании ДЦ
+                        (Akbor, Huawei)</p>
+                </li>
+                <li class="is-work__list-item is-work__list-item_2">
+                    <span class="is-work__icon is-work__icon_2"></span>
+                    <p class="is-work__text">Фильтрация L7 OSI
+                        через прокси-фильтр
+                        DDoSoff.ru</p>
+                </li>
+                <li class="is-work__list-item is-work__list-item_3">
+                    <span class="is-work__icon is-work__icon_3"></span>
+                    <p class="is-work__text">Локальный файрвол
+                        и правильная
+                        настройка
+                        сервера VDS</p>
+                </li>
+                <li class="is-work__list-item is-work__list-item_4">
+                    <span class="is-work__icon is-work__icon_4"></span>
+                </li>
+            </ul>
+            <a href="" class="is-work__button">Подробнее о защите</a>
+        </div>
+    </div>
+
+    <div class="quest">
+        <div class="quest__wrapper container">
+            <h3 class="quest__title">часто задаваемые <br>вопросы</h3>
+            <div class="quest__accordion">
+                <div class="quest__accordion-wrapper accordion active">
+                    <label class="quest__accordion-title">Здравствуйте. Хотелось бы у вас заказать защищенную VPS, она уже настроена для переноса, как это сделать?</label>
+                    <div class="quest__content content">
+                        <p class="quest__text">Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали.</p>
+                    </div>
+                </div>
+                <div class="quest__accordion-wrapper accordion">
+                    <label class="quest__accordion-title">Здравствуйте. Хотелось бы у вас заказать защищенную VPS, она уже настроена для переноса, как это сделать?</label>
+                    <div class="quest__content content">
+                        <p class="quest__text">Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали.</p>
+                    </div>
+                </div>
+                <div class="quest__accordion-wrapper accordion">
+                    <label class="quest__accordion-title">Здравствуйте. Хотелось бы у вас заказать защищенную VPS, она уже настроена для переноса, как это сделать?</label>
+                    <div class="quest__content content">
+                        <p class="quest__text">Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали.</p>
+                    </div>
+                </div>
+                <div class="quest__accordion-wrapper accordion">
+                    <label class="quest__accordion-title">Здравствуйте. Хотелось бы у вас заказать защищенную VPS, она уже настроена для переноса, как это сделать?</label>
+                    <div class="quest__content content">
+                        <p class="quest__text">Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали.</p>
+                    </div>
+                </div>
+                <div class="quest__accordion-wrapper accordion">
+                    <label class="quest__accordion-title">Здравствуйте. Хотелось бы у вас заказать защищенную VPS, она уже настроена для переноса, как это сделать?</label>
+                    <div class="quest__content content">
+                        <p class="quest__text">Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали.</p>
+                    </div>
+                </div>
+                <div class="quest__accordion-wrapper accordion">
+                    <label class="quest__accordion-title">Здравствуйте. Хотелось бы у вас заказать защищенную VPS, она уже настроена для переноса, как это сделать?</label>
+                    <div class="quest__content content">
+                        <p class="quest__text">Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали. Сайт Минобразования не работает из-за DDoS-атак, оставьте заявку на сайте, свяжемся с вами и обсудим детали.</p>
+                    </div>
+                </div>
+                <a href="" class="quest__link">Посмотреть все вопросы</a>
+                <a href="" class="quest__button">Задать вопрос</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="news__wrapper container">
+            <h3 class="news__title">НОВОСТИ</h3>
+            <a href="" class="news__all-link">Все новости</a>
+            <ul class="news__list">
+                <li class="news__list-item card-news">
+                    <img src="img/card-news__img.jpg" alt="" class="card-news__img">
+                    <h3 class="card-news__title">Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки
+                    </h3>
+                    <p class="card-news__text">Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки</p>
+                    <span class="card-news__date">26 декабря 2017, 13:05</span>
+                    <a href="" class="card-news__link"></a>
+                </li>
+                <li class="news__list-item card-news">
+                    <img src="img/card-news__img.jpg" alt="" class="card-news__img">
+                    <h3 class="card-news__title">Сайт минобразование не работает из-за DDoS атаки</h3>
+                    <p class="card-news__text">Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки
+                        Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки
+                    </p>
+                    <span class="card-news__date">26 декабря 2017, 13:05</span>
+                    <a href="" class="card-news__link"></a>
+                </li>
+                <li class="news__list-item card-news">
+                    <img src="img/card-news__img.jpg" alt="" class="card-news__img">
+                    <h3 class="card-news__title">Сайт минобразование не работает из-за DDoS атаки</h3>
+                    <p class="card-news__text">Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки</p>
+                    <span class="card-news__date">26 декабря 2017, 13:05</span>
+                    <a href="" class="card-news__link"></a>
+                </li>
+                <li class="news__list-item card-news">
+                    <img src="img/card-news__img.jpg" alt="" class="card-news__img">
+                    <h3 class="card-news__title">Сайт минобразование не работает из-за DDoS атаки</h3>
+                    <p class="card-news__text">Сайт минобразование не работает из-за DDoS атаки. Сайт минобразование не работает из-за DDoS атаки</p>
+                    <span class="card-news__date">26 декабря 2017, 13:05</span>
+                    <a href="" class="card-news__link"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="customers">
+        <div class="customers__wrapper container">
+            <h3 class="customers__title">КЛИЕНТЫ</h3>
+            <div class="customers__carusel owl-carousel owl-theme">
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+                <div class="customers__item item"><img src="img/customers__img.jpg" alt="" class="customers__img">
+                    <p class="customers__text">Сеть магазинов
+                        кальянов</p>
+                    <a href="" class="customers__link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__logo logo">
+                <img src="img/logo__img.png" alt="" class="logo__img">
+                <img src="img/zamok.jpg" alt="" class="logo__zamok hidden">
+                <a href="" class="logo__link"></a>
+            </div>
+            <nav class="footer__menu">
+                <a href="" class="footer__menu-link footer__menu-link_active footer__menu-link_first">Главная</a>
+                <a href="" class="footer__menu-link">О компании</a>
+                <a href="" class="footer__menu-link">Услуги и цены</a>
+                <a href="" class="footer__menu-link">FAQ</a>
+                <a href="" class="footer__menu-link footer__menu-link_last">Контакты</a>
+            </nav>
+            <div class="footer__contact">
+                <div class="footer__contact-wrapper">
+                    <a href="" class="footer__phone">+7 |499| <span class="footer__phone_bold">123 45 67</span></a>
+                    <a href="" class="footer__email">info@ddosoff.ru</a>
+                </div>
+            </div>
+            <div class="footer__button-menu button-burger">
+                <span class="button-burger__line"></span>
+                <span class="button-burger__line"></span>
+                <span class="button-burger__line"></span>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <div class="copy__wrapper container">
+            <p class="copy__copy">© DDoSOFF., 2009-2018 г. Все права защищены.</p>
+            <div class="copy__link-b">
+                <a href="" class="copy__link">Договор-оферты для физических лиц</a>
+                <a href="" class="copy__link">Договор-оферта для юридических лиц</a>
+                <a href="" class="copy__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

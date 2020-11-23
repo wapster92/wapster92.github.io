@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>London-design</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+            <div class="header__top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="https://london-design.ru"></a>
+                        <div class="logo-img">
+                            <img alt="" title="" src="img/logo-img.png" alt="">
+                            <span class="logo-text">London-design</span>
+                        </div>
+                        <span>Архитектурная дизайн-студия</span>
+                    </div>
+                    <div class="adress">
+                        <a href="#" class="adress__local">
+                        Адрес офиса: <br>
+                        Москва, ул. Студенческая 26
+                    </a>
+                        <a href="mailto:info@london-design.ru" class="adress__mail">info@london-design.ru</a>
+                    </div>
+                    <div class="telephone">
+                        <a href="tel:84957775623" class="tel">
+                            8 (495) 777-56-23
+                        </a>
+                        <span>Есть вопросы?</span>
+                        <a href="" class="toform zvonok">Мы можем перезвонить!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container">
+                    <h1>Индивидуальное проектирование, дизайн
+                        и строительство загородных домов от 300 м<sup>2</sup></h1>
+                    <a href="#katalog" class="cat-link-js">Скачать каталог из 2120 проектов загородных домов</a>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="menu">
+        <div class="container">
+            <nav><a href="#katalog">Скачать каталог</a><a href="#cash">Наши цены</a><a href="#stages">Схема работы</a><a href="#primer">Примеры проектов </a><button class="zvonok">Заказать звонок</button></nav>
+        </div>
+    </div>
+
+
+    <div class="edge">
+        <div class="container">
+            <div class="item item1">
+                <div class="about">
+                    <h3>>2 100</h3>
+                    <p>готовых проектов
+                        в каталоге</p>
+                </div>
+            </div>
+            <div class="item item2">
+                <div class="about">
+                    <h3>в подарок</h3>
+                    <p>видеоролик с 3D
+                        визуализацией дома</p>
+                </div>
+            </div>
+            <div class="item item3">
+                <div class="about">
+                    <h3>8000 м<sup>2</sup></h3>
+                    <p>самый большой
+                        частный дом,  который
+                        мы проектировали</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <section id="katalog">
+
+
+
+       <div class="banner">
+           <div class="container">
+               <div class="form__wrapper">
+                   <form action="mail.php" method="POST">
+
+                   <h3 class="form-title">Для получения
+                           каталога введите
+                           Ваш телефон и e-mail:</h3>
+                       <div class="input-group">
+                           <input type="text" name="phone" required class="phone" id="phone1" placeholder="Введите Ваш телефон">
+                           <label for="phone1" class="label-phone"></label>
+                       </div>
+                       <div class="input-group">
+                           <input type="email" name="email" required class="email" id="email1" placeholder="Введите e-mail">
+                           <label for="email1" class="label-email"></label>
+                       </div>
+                       <input type="hidden" name="name-block"  value="скачать каталог" />
+
+                       <button>Получить каталог!</button>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+    <div id="cash" class="cash">
+        <div class="container">
+            <h3 class="title-block">Стоимость проектирования:</h3>
+            <div class="card__wrapper">
+                <div class="card">
+                    <h3 class="title-card">Эскизный
+                        проект</h3>
+                    <ul>
+                        <li><span>Поэтажная планировка</span></li>
+                        <li><span>3D визуализация дома </span></li>
+                        <li><span>Подбор всех строительных материалов</span></li>
+                        <li><span>Расчет стоимости дома в нескольких комплектациях</span></li>
+                    </ul>
+                    <span class="sum">300 <span>р./м<sup>2</sup></span></span>
+                    <button id="eskiz-bt">Получить консультацию</button>
+                </div>
+                <div class="card">
+                    <h3 class="title-card">Рабочий
+                        проект</h3>
+                    <ul>
+                        <li><span>Архитектурный раздел <i>(Эскизный проект превращенный в тех документацию для строителей)</i></span></li>
+                        <li><span>Конструктивный раздел <i>(Расчеты нагрузок, узлы перекрытий, монтажные схемы)</i></span></li>
+                    </ul>
+                    <span class="sum">700 <span>р./м<sup>2</sup></span></span>
+                    <button id="workproject-bt">Получить консультацию</button>
+                </div>
+                <div class="card">
+                    <h3 class="title-card">Инженерные
+                        сети</h3>
+                    <ul>
+                        <li><span>Проект отопления и вентиляции</span></li>
+                        <li><span>Проект водопровода и канализации</span></li>
+                        <li><span>Проект электроснабжения</span></li>
+                        <li><span>Проект слаботочных систем</span></li>
+                        <li><span>Система "Умный дом"</span></li>
+                    </ul>
+                    <span class="sum">150-500 <span>р./м<sup>2</sup></span></span>
+                    <button id="injener-bt">Получить консультацию</button>
+                </div>
+                <div class="card">
+                    <h3 class="title-card">Дизайн-
+                        проект</h3>
+                    <ul>
+                        <li><span>Рабочая документация</span></li>
+                        <li><span>Стилевые решения</span></li>
+                        <li><span>Подбор материалов, мебели и освещения</span></li>
+                        <li><span>Декорирование </span></li>
+                    </ul>
+                    <span class="sum">700-3000 <span>р./м<sup>2</sup></span></span>
+                    <button id="desinjer-bt">Получить консультацию</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="stages" class="stages">
+        <div class="container">
+            <h3 class="title-block">Этапы создания рабочего проекта:</h3>
+            <ul>
+                <li>
+                    <div class="circle"><span class="number">01.</span></div>
+                    <span class="text">Обращение</span></li>
+                <li>
+                    <div class="circle"><span class="number">02.</span></div>
+                    <span class="text">Встреча</span></li>
+                <li>
+                    <div class="circle"><span class="number">03.</span></div>
+                    <span class="text">Планировки</span></li>
+                <li>
+                    <div class="circle"><span class="number">04.</span></div>
+                    <span class="text">3D модель</span></li>
+                <li>
+                    <div class="circle"><span class="number">05.</span></div>
+                    <span class="text">Архитектурный
+раздел</span></li>
+                <li>
+                    <div class="circle"><span class="number">06.</span></div>
+                    <span class="text">Конструктивный
+раздел</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="primer" class="complete">
+        <div class="container">
+            <h3 class="title-block">Выполненные проекты:</h3>
+            <div class="projects__wrapper">
+                <div class="project">
+                    <div class="slider">
+                        <div id="slider1" class="flexslider osnova">
+                            <ul class="slides">
+                                <li>
+                                    <a class="lig" href="img/kipr/1.jpg"><img alt="" title="" src="img/kipr/1.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/19.jpg"><img alt="" title="" src="img/kipr/19.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/20.jpg"><img alt="" title="" src="img/kipr/20.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/2.jpg"><img alt="" title="" src="img/kipr/2.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/3.jpg"><img alt="" title="" src="img/kipr/3.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/5.jpg"><img alt="" title="" src="img/kipr/4.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/4.jpg"><img alt="" title="" src="img/kipr/5.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/6.jpg"><img alt="" title="" src="img/kipr/6.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/7.jpg"><img alt="" title="" src="img/kipr/7.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/8.jpg"><img alt="" title="" src="img/kipr/8.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/9.jpg"><img alt="" title="" src="img/kipr/9.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/10.jpg"><img alt="" title="" src="img/kipr/10.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/11.jpg"><img alt="" title="" src="img/kipr/11.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/12.jpg"><img alt="" title="" src="img/kipr/12.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/13.jpg"><img alt="" title="" src="img/kipr/13.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/14.jpg"><img alt="" title="" src="img/kipr/14.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/15.jpg"><img alt="" title="" src="img/kipr/15.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/16.jpg"><img alt="" title="" src="img/kipr/16.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/17.jpg"><img alt="" title="" src="img/kipr/17.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig" href="img/kipr/18.jpg"><img alt="" title="" src="img/kipr/18.jpg" /></a>
+                                </li>
+
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                        <div id="carousel1" class="flexslider tumbs">
+                            <ul class="slides">
+                                <li>
+                                    <img alt="" title="" src="img/kipr/1.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/19.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/20.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/2.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/3.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/4.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/5.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/6.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/7.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/8.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/9.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/10.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/11.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/12.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/13.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/14.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/15.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/16.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/17.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/kipr/18.jpg" />
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                    </div>
+                    <article>
+                        <h3 class="article-title">Проект виллы на Кипре
+                            2013 год</h3>
+                        <p><b>Площадь дома:</b> 727 м<sup>2</sup></p>
+                        <p><b>Задача:</b> Сделать светлую, уютную виллу в средиземноморском стиле для летнего отдыха и периодических выходных поездок.</p>
+                        <p><b>Решение:</b> </p>
+                        <p>Наши архитекторы выбрали светлую бежевую штукатурку и облицовочный камень. Специально разработали теплое, желтоватое освещение и много окон различных размеров по периметру дома.</p>
+                        <p>Для того, чтобы все пространство получилось в едином стиле, мы проектировали все под ключ: архитектурное проектирование дома, дизайн-проект, комплектация мебелью и декорирование, а также ландшафтный дизайн.</p>
+                        <p>Были созданы планировки, устроившие всех членов семьи. На 1 этаже мы разместили кухню и комнаты общего назначения, как для гостей, так и для постоянных жильцов. На 2 этаже все спальни, детские, панорамные балконы на патио.</p>
+                    </article>
+                </div>
+                <div class="project">
+                    <div class="slider">
+                        <div id="slider2" class="flexslider osnova">
+                            <ul class="slides">
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/1.jpg"><img alt="" title="" src="img/xlyabov/1.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/2.jpg"><img alt="" title="" src="img/xlyabov/2.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/32.jpg"><img alt="" title="" src="img/xlyabov/32.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/3.jpg"><img alt="" title="" src="img/xlyabov/3.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/4.jpg"><img alt="" title="" src="img/xlyabov/4.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/5.jpg"><img alt="" title="" src="img/xlyabov/5.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/6.jpg"><img alt="" title="" src="img/xlyabov/6.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/7.jpg"><img alt="" title="" src="img/xlyabov/7.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/8.jpg"><img alt="" title="" src="img/xlyabov/8.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/9.jpg"><img alt="" title="" src="img/xlyabov/9.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/10.jpg"><img alt="" title="" src="img/xlyabov/10.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/11.jpg"><img alt="" title="" src="img/xlyabov/11.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/12.jpg"><img alt="" title="" src="img/xlyabov/12.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/16.jpg"><img alt="" title="" src="img/xlyabov/16.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/17.jpg"><img alt="" title="" src="img/xlyabov/17.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/18.jpg"><img alt="" title="" src="img/xlyabov/18.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/19.jpg"><img alt="" title="" src="img/xlyabov/19.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/20.jpg"><img alt="" title="" src="img/xlyabov/20.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/21.jpg"><img alt="" title="" src="img/xlyabov/21.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/22.jpg"><img alt="" title="" src="img/xlyabov/22.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig2" href="img/xlyabov/23.jpg"><img alt="" title="" src="img/xlyabov/23.jpg" /></a>
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                        <div id="carousel2" class="flexslider tumbs">
+                            <ul class="slides">
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/1.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/2.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/32.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/3.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/4.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/5.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/6.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/7.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/8.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/9.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/10.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/11.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/12.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/16.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/17.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/18.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/19.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/20.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/21.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/22.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/xlyabov/23.jpg" />
+                                </li>
+
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                    </div>
+                    <article>
+                        <h3 class="article-title">Дом из облицовочного кирпича
+                            Хлябово, Дмитровское шоссе</h3>
+                        <p><b>Площадь дома:</b> 714 м<sup>2</sup></p>
+                        <p><b>Задача:</b> Спроектировать и построить просторный загородный дом для семьи из 3 поколений.</p>
+                        <p><b>Решение:</b> </p>
+                        <p>В качестве основного материалы были выбраны керамические блоки  с облицовочным кирпичом Rauf и облицовочным камнем White hills для цоколя. </p>
+                        <p>Для расширения площади было предложено поднять стены двухэтажного дома на 60 см и сделать мансардный этаж. На нем реализовались все "хотелки" заказчика - бар, кинотеатр и детская игровая комната.</p>
+                        <p>Проект дома был построен был спроектирован и согласован за 1,5 месяца и построен за 5 месяцев нашими партнерами - строительной компанией Архистрой. После за 2 месяца была сделана вутренняя отделка согласно дизайн-проекту, а также закуплена мебель и предметы декора.</p>
+                    </article>
+                </div>
+                <div class="project">
+                    <div class="slider">
+                        <div id="slider3" class="flexslider osnova">
+                            <ul class="slides">
+                                <li>
+                                    <a class="lig3" href="img/modern/1.jpg"><img alt="" title="" src="img/modern/1.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/27.gif"><img alt="" title="" src="img/modern/27.gif" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/28.gif"><img alt="" title="" src="img/modern/28.gif" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/29.gif"><img alt="" title="" src="img/modern/29.gif" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/30.gif"><img alt="" title="" src="img/modern/30.gif" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/31.jpg"><img alt="" title="" src="img/modern/31.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/32.jpg"><img alt="" title="" src="img/modern/32.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/2.jpg"><img alt="" title="" src="img/modern/2.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/3.jpg"><img alt="" title="" src="img/modern/3.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/4.jpg"><img alt="" title="" src="img/modern/4.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/5.jpg"><img alt="" title="" src="img/modern/5.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/6.jpg"><img alt="" title="" src="img/modern/6.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/7.jpg"><img alt="" title="" src="img/modern/7.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/8.jpg"><img alt="" title="" src="img/modern/8.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/9.jpg"><img alt="" title="" src="img/modern/9.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/10.jpg"><img alt="" title="" src="img/modern/10.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/11.jpg"><img alt="" title="" src="img/modern/11.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/12.jpg"><img alt="" title="" src="img/modern/12.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/13.jpg"><img alt="" title="" src="img/modern/13.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/14.jpg"><img alt="" title="" src="img/modern/14.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/15.jpg"><img alt="" title="" src="img/modern/15.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/16.jpg"><img alt="" title="" src="img/modern/16.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/18.jpg"><img alt="" title="" src="img/modern/18.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/19.jpg"><img alt="" title="" src="img/modern/19.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/20.jpg"><img alt="" title="" src="img/modern/20.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/21.jpg"><img alt="" title="" src="img/modern/21.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/22.jpg"><img alt="" title="" src="img/modern/22.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/23.jpg"><img alt="" title="" src="img/modern/23.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/24.jpg"><img alt="" title="" src="img/modern/24.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/25.jpg"><img alt="" title="" src="img/modern/25.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a class="lig3" href="img/modern/26.jpg"><img alt="" title="" src="img/modern/26.jpg" /></a>
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                        <div id="carousel3" class="flexslider tumbs">
+                            <ul class="slides">
+                                <li>
+                                    <img alt="" title="" src="img/modern/1.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/27.gif" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/28.gif" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/29.gif" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/30.gif" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/31.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/32.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/2.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/3.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/4.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/5.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/6.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/7.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/8.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/9.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/10.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/11.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/12.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/13.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/14.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/15.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/16.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/18.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/19.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/20.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/21.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/22.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/23.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/24.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/25.jpg" />
+                                </li>
+                                <li>
+                                    <img alt="" title="" src="img/modern/26.jpg" />
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                    </div>
+                    <article>
+                        <h3 class="article-title">Дом в современном стиле
+                            КП Миллениум парк, Новорижское шоссе</h3>
+                        <p><b>Площадь дома:</b> 397 м<sup>2</sup></p>
+                        <p><b>Задача:</b> Создать дом в современном стиле на участке с сильным уклоном для постоянного проживания супружеской четы, а также пространством для 2 взрослых детей.</p>
+                        <p><b>Решение:</b> </p>
+                        <p>Был спроектирован дом в 2 уровня, с возможностью захода в дом с улицы сразу на 2 этаж. Уклон на участке был оставлен, прямые линии дома лишь подчеркнуть извилистость природного рельефа.</p>
+                        <p>Архитектором были выбраны бежевый и коричневый цвет для создания контраста, а также большие панорамные окна с выделенными оконными рамами для придания дому выразительности.</p>
+                        <p>Внутри дома создан спокойный дизайн в стиле эко с большим количеством свободного пространства и минимумом мебели и элементов декора.</p>
+                    </article>
+                </div>
+                <div class="youto">
+                    <h3 class="title-form">Хотите также?</h3>
+                    <p class="text-title">Запишитесь на бесплатную консультацию
+                        с нашим ведущим архитектором по поводу вашего будущего дома</p>
+                    <form action="mail.php" method="POST">
+                    <div class="input-group">
+                            <input type="text" name="name" id="youto-name" placeholder="Введите Ваше имя">
+                            <label for="youto-name"></label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" required id="youto-phone" placeholder="Введите Ваш телефон">
+                            <label for="youto-phone"></label>
+                        </div>
+                        <input type="hidden" name="name-block"  value="Запись на консультацию" />
+                        <button>Записаться на консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="map" id="map">
+
+            <ul class="adress-form">
+                <li>
+                    <h3 class="title-adress">Адрес офиса:</h3>
+                    <span class="text-adress">ул. Студенческая 26, офис №13</span></li>
+                <li>
+                    <h3 class="title-adress">Телефон офиса:</h3>
+                    <span class="text-adress">8 (495) 777-56-23</span></li>
+                <li>
+                    <h3 class="title-adress">E-mail:</h3>
+                    <span class="text-adress">info@london-design.ru</span></li>
+                <li>
+                    <h3 class="title-adress">Время работы:</h3>
+                    <span class="text-adress">ПН-ПТ: 10:00 - 20:00 <br>
+СБ-ВС: 10:00 - 18:00</span></li>
+            </ul>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="info">
+
+            </div>
+            <div class="conf">
+                <a id="konf" href="">Политика конфиденциальности</a>
+                <p><span>Все права защищены.</span>
+                <span>Копирование материалов запрещено!</span>
+                <span>2009 - 2017 ©</span></p>
+            </div>
+            <div class="tel">
+                <a href="tel:84957775623" class="number">8 (495) 777-56-23</a>
+                <button class="zvonok">Заказать звонок</button>
+                <a href="mailto:info@london-design.ru" class="mail">info@london-design.ru</a>
+            </div>
+        </div>
+    </footer>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+
+    <div style="display: none;">
+        <div class="box-modal" id="konf-mod">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal__wrapper pol-modal__wrapper">
+                <h3 class="pol">Политика конфиденциальности</h3>
+                <h4 class="pol-p">Сбор информации</h4>
+                <p class="pol-text">При оставлении заявки на ресурсе сайта London-design.ru клиенты предоставляют следующие сведения:</p>
+                <ul class="pol-list">
+                    <li>
+                        <p class="pol-text"> Имя.</p>
+                    </li>
+                    <li>
+                        <p class="pol-text"> Контактный E-mail</p>
+                    </li>
+                    <li>
+                        <p class="pol-text">Контактный телефон</p>
+                    </li>
+                </ul>
+
+
+
+                <p class="pol-text">Также администрация сайта получает данные об IP-адресе посетителей, а также о типе браузера, времени нахождения на сайте и прочие подобные сведения. Сбор ведётся с помощью сервисов статистики.</p>
+                <h4 class="pol-p">Использование информации</h4>
+                <p class="pol-text">Вся полученная информация используется администрацией сайта sarh.ru исключительно в целях связи с клиентом. Сайт sarh.ru имеет право направлять клиенту информационные сообщения, если он подписался на них.</p>
+                <h4 class="pol-p">Защита персональных данных</h4>
+                <p class="pol-text">Сайт london-design.ru обязуется не разглашать сведения, полученные от клиентов. Она хранится в базе данных на локальном компьютере администрации сайта. Доступ к компьютеру надёжно защищён паролем, который имеется только у администратора сайта.</p>
+                <h4 class="pol-p">Предоставление данных третьим лицам</h4>
+                <p class="pol-text">Полученные сведения не могут быть переданы третьим лицам, за исключением следующих случаев:</p>
+                <ul class="pol-list">
+                    <li>
+                        <p class="pol-text">Для исполнения обязательств перед клиентом – только с его разрешения.</p>
+                    </li>
+                    <li>
+                        <p class="pol-text">В соответствии с обоснованными и применимыми требованиями закона.</p>
+                    </li>
+                </ul>
+
+
+                <h4 class="pol-p">Контакты:</h4>
+                <p class="pol-text">По всем вопросам вы можете обращаться к администрации сайта.</p>
+                <ul class="pol-list">
+                    <li>
+                        <p class="pol-text">Телефон: 8 (495) 777 – 56 - 23</p>
+                    </li>
+                    <li>
+                        <p class="pol-text">E-mail: info@london-design.ru</p>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        <div class="box-modal" id="exampleModal">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal__wrapper">
+                <h3 class="modal-title">Для заказа
+                    обратного звонка</h3>
+                <p class="modal-text">введите Ваше имя и номер телефона</p>
+                <form action="mail.php" method="POST">
+                <div class="input-group"><input type="text" name="name" id="modal1-name" placeholder="Введите Ваше имя"><label for="modal1-name"></label></div>
+                    <div class="input-group"><input type="text" required name="phone" id="modal1-phone" placeholder="Введите Ваш телефон"><label
+                            for="modal1-phone"></label></div>
+
+                    <input type="hidden" name="name-block"  value="Обратный звонок" />
+                    <button>Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="eskiz">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal__wrapper">
+                <h3 class="modal-title">Для заказа
+                    бесплатной консультации</h3>
+                <p class="modal-text">от нашего ведущего архитектора
+                    введите Ваше имя и номер телефона</p>
+                <form action="mail.php" method="POST">
+
+                <div class="input-group"><input type="text" name="name" id="eskiz-name" placeholder="Введите Ваше имя"><label for="eskiz-name"></label></div>
+                    <div class="input-group"><input type="text" required name="phone" id="eskiz-phone" placeholder="Введите Ваш телефон"><label
+                            for="eskiz-phone"></label></div>
+                    <input type="hidden" name="name-block"  value="каталог-эскизный проект" />
+                    <button>Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="workproject">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal__wrapper">
+                <h3 class="modal-title">Для заказа
+                    бесплатной консультации</h3>
+                <p class="modal-text">от нашего ведущего архитектора
+                    введите Ваше имя и номер телефона</p>
+                <form action="mail.php" method="POST">
+
+
+                <div class="input-group"><input type="text" name="name" id="workproject-name" placeholder="Введите Ваше имя"><label for="workproject-name"></label></div>
+                    <div class="input-group"><input type="text" required name="phone" id="workproject-phone" placeholder="Введите Ваш телефон"><label
+                            for="workproject-phone"></label></div>
+                    <input type="hidden" name="name-block"  value="каталог-рабочий проект" />
+                    <button>Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="injener">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal__wrapper">
+                <h3 class="modal-title">Для заказа
+                    бесплатной консультации</h3>
+                <p class="modal-text">от нашего ведущего архитектора
+                    введите Ваше имя и номер телефона</p>
+                <form action="" name="injener">
+                    <div class="input-group"><input type="text" name="name" id="injener-name" placeholder="Введите Ваше имя"><label for="injener-name"></label></div>
+                    <div class="input-group"><input type="text" required name="phone" id="injener-phone" placeholder="Введите Ваш телефон"><label
+                            for="injener-phone"></label></div>
+                    <input type="hidden" name="name-block"  value="каталог-инженерные сети" />
+                    <button>Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="box-modal" id="desinjer">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="box-modal__wrapper">
+                <h3 class="modal-title">Для заказа
+                    бесплатной консультации</h3>
+                <p class="modal-text">от нашего ведущего архитектора
+                    введите Ваше имя и номер телефона</p>
+                <form action="mail.php" method="POST">
+
+                <div class="input-group"><input type="text" name="name" id="desinjer-name" placeholder="Введите Ваше имя"><label for="desinjer-name"></label></div>
+                    <div class="input-group"><input type="text" required name="phone" id="desinjer-phone" placeholder="Введите Ваш телефон"><label
+                            for="desinjer-phone"></label></div>
+                    <input type="hidden" name="name-block"  value="каталог-дизайн-проект" />
+                    <button>Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.742423, 37.546372],
+                    zoom: 15
+                }),
+                // Создаём макет содержимого.
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Наш офисс'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: '../img/marker.png',
+                    // Размеры метки.
+                    iconImageSize: [30, 42],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                });
+
+
+            myMap.geoObjects
+                .add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</body>
+</html>
